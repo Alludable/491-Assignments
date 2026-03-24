@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_list_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            />
+
+        <Button
+            android:id="@+id/task1Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply for jobs"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order a charcoal canister"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task3Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Try out spice kitchen"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task4Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attend Lecture"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task5Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complete Assignment"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task6Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group Project Meeting"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task7Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review Notes"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/task8Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Emails"
+            android:layout_marginBottom="12dp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
