@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SensorProject</string>
+    <string name="Accelerometer">Accelerometer</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Z">Z</string>
+    <string name="Gyroscope">Gyroscope</string>
+    <string name="gyroX">GX: </string>
+    <string name="gyroY">GY: </string>
+    <string name="gyroZ">GZ: </string>
+    <string name="Orientation">Orientation</string>
+    <string name="OrientationText">Loading...</string>
+
+</resources>
