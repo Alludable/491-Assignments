@@ -18,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.Priority;
+import com.google.android.gms.tasks.CancellationTokenSource;
 import com.google.android.gms.location.LocationServices;
 
 import java.io.BufferedReader;
@@ -115,7 +117,18 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        fusedLocationClient.getLastLocation()
+        CancellationTokenSource cts = new CancellationTokenSource();
+
+        if (ActivityCompat.checkSelfPermission(
+                this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+
+        fusedLocationClient.getCurrentLocation(
+                Priority.PRIORITY_HIGH_ACCURACY,
+                cts.getToken()
+                )
                 .addOnSuccessListener(this, location -> {
                     if (location != null) {
                         saveAndDisplayLocation(location);
